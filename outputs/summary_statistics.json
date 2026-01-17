@@ -1,0 +1,33 @@
+{
+  "total_hexagons": 7864,
+  "vegetated_hexagons": 5750,
+  "non_vegetated_hexagons": 2114,
+  "vegetation_percentage": 73.1,
+  "change_statistics": {
+    "mean": 0.0061,
+    "median": 0.0014,
+    "std": 0.0348,
+    "min": -0.2918,
+    "max": 0.1937
+  },
+  "direction_breakdown": {
+    "increase": 2203,
+    "decrease": 1764,
+    "stable": 1783
+  },
+  "severity_breakdown": {
+    "severe": 1908,
+    "moderate": 1643,
+    "mild": 2199
+  },
+  "area_statistics_km2": {
+    "total": 616.43,
+    "vegetated": 450.72,
+    "severe_change": 149.56
+  },
+  "quality_metrics": {
+    "avg_confidence": 0.891,
+    "high_uncertainty_count": 32,
+    "high_uncertainty_percentage": 0.4
+  }
+}

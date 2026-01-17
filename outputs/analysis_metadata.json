@@ -1,0 +1,29 @@
+{
+  "h3_resolution": 9,
+  "thresholds": {
+    "non_vegetated": 0.15,
+    "vegetated_min": 0.15,
+    "sparse": 0.3,
+    "moderate": 0.15,
+    "severe": 0.3
+  },
+  "min_pixel_ratio": 0.7,
+  "processing_date": "2026-01-17T13:29:23.863235",
+  "source_files": {
+    "red_2025": "D:/py/geemaps/ds/islambad_jan25\\B04.tif",
+    "nir_2025": "D:/py/geemaps/ds/islambad_jan25\\B08.tif",
+    "red_2026": "D:/py/geemaps/ds/islambad_jan26\\B04.tif",
+    "nir_2026": "D:/py/geemaps/ds/islambad_jan26\\B08.tif"
+  },
+  "total_hexagons_generated": 15044,
+  "valid_results": 7864,
+  "invalid_results": 7180,
+  "success_rate": "52.3%",
+  "use_adaptive_severity": true,
+  "n_workers": 4,
+  "avg_confidence": 0.891,
+  "avg_pixel_count": 1145.3,
+  "warnings_count": 48,
+  "morans_i": 0.622,
+  "spatial_interpretation": "Strong positive clustering (hotspots)"
+}
