@@ -1,0 +1,24 @@
+{
+    "python.defaultInterpreterPath": "D:\\py\\geemaps\\.geemaps\\Scripts\\python.exe",
+    "python.analysis.extraPaths": [
+        "D:\\py\\geemaps\\ndvi_h3_analysis"
+    ],
+    // Add a vertical ruler at column 120
+    "editor.rulers": [
+        160
+    ],
+    // Wrap lines at column 120
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    // If you use Prettier for JS/TS formatting
+    "prettier.printWidth": 120,
+    // Use Ruff for linting/formatting
+    "python.linting.enabled": true,
+    "python.linting.ruffEnabled": true,
+    "python.linting.ruffPath": "ruff", // or full path if not in PATH
+    "python.formatting.provider": "ruff",
+    "python.formatting.ruffArgs": [
+        "--line-length",
+        "120"
+    ]
+}

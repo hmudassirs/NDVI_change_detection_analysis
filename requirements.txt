@@ -1,0 +1,21 @@
+# Core Dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+pyyaml>=6.0
+
+# Geospatial Libraries
+rasterio>=1.3.0
+h3>=3.7.6
+pyproj>=3.4.0
+shapely>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+folium>=0.14.0
+
+# Scientific Computing
+scipy>=1.10.0
+
+# Progress Bars
+tqdm>=4.65.0
+

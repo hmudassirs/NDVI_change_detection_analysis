@@ -1,0 +1,42 @@
+# =====================================================================
+# NDVI CHANGE DETECTION CONFIGURATION
+# =====================================================================
+
+paths:
+  # Input datasets (update after running dataset preparation)
+  jan_2025: "D:/py/geemaps/ds/islambad_jan25"
+  jan_2026: "D:/py/geemaps/ds/islambad_jan26"
+  
+  # Output directory for results
+  output_dir: "D:/py/geemaps/ndvi_h3_analysis/outputs"
+
+# Sentinel-2 Band Configuration (10m resolution)
+bands:
+  red: "B04"  # Red band (665 nm)
+  nir: "B08"  # Near-Infrared band (842 nm)
+
+# H3 Hexagonal Grid Settings
+h3:
+  resolution: 9  # Resolution 9 ≈ 0.105 km² per hexagon
+  min_pixel_ratio: 0.7  # Minimum ratio of valid pixels (0.0 - 1.0)
+
+# NDVI Classification Thresholds
+ndvi_thresholds:
+  non_vegetated: 0.15  # Below this = non-vegetated
+  vegetated_min: 0.15  # Above this = vegetated
+  sparse: 0.3          # Sparse vegetation threshold
+
+# NDVI Change Classification Thresholds
+change_thresholds:
+  moderate: 0.15  # Moderate change threshold
+  severe: 0.3     # Severe change threshold
+
+# Processing Configuration
+processing:
+  n_workers: 4  # Number of threads for parallel processing
+  use_adaptive_severity: true  # Use adaptive (context-aware) severity classification
+
+# Visualization Settings
+visualization:
+  figure_dpi: 300  # DPI for static matplotlib figures
+  map_zoom: 11     # Initial zoom level for Folium maps
